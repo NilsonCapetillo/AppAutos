@@ -1,0 +1,45 @@
+.vistas{
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 45px;
+    border: 3px;
+    border-color: rgb(59, 59, 121);
+    border-style: none;
+
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.vistas :hover{
+    color:  black;
+    background-color: #aaa9a9;
+    font-size: 27px;
+    font-family: fantasy;
+}
+.tabla{
+    width: 50%;
+    height: 45px;
+    text-align: center;
+    font-size: 27px;
+    font-family: fantasy;
+    color:white;
+    margin: 0px;
+    border:  rgb(59, 59, 121);
+    border: 0px;
+    align-items: center;
+}
+
+.lista{
+    width: 50%;
+    height: 45px;
+    text-align: center;
+    font-size: 27px;
+    font-family: fantasy;
+    color:white;
+    margin: 0px;
+    border:  rgb(59, 59, 121);
+    border: 0px;
+    border-style: hidden;
+    align-items: center;
+}
