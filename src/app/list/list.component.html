@@ -1,0 +1,5 @@
+<div class="lista" *ngFor="let auto of autos | slice: (page-1) * pageSize : (page-1) * pageSize + pageSize">
+    <button class="boton btn  btn-outline-primary" (click) = openModalDetalles(auto)><i class="fa fa-eye fa-3x"></i></button>
+    <span class="auto">{{auto.descripcion}}</span>
+</div>
+<ngb-pagination class="paginacion" [(page)]="page" [pageSize]="pageSize" [collectionSize] = 40></ngb-pagination>
