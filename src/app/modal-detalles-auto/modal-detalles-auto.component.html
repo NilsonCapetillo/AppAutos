@@ -1,0 +1,15 @@
+<div class="modal-header">
+    <h4 class="modal-title">Detalles del Auto</h4>
+    <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <p>Marca:  {{ autoSeleccionado.marca }} </p>
+    <p>Sub-marca:  {{autoSeleccionado.submarca}}</p>
+    <p>Modelo:  {{autoSeleccionado.modelos}}</p>
+    <p>Descripcion:  {{autoSeleccionado.descripcion}}</p>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="activeModal.close('Close click')">Close</button>
+  </div>
