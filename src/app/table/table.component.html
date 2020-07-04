@@ -1,0 +1,25 @@
+<button type="button" class="btn btn-dark" (click)="openModalAgregar()">Agregar <i class="fa fa-plus"></i></button>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Marca</th>
+      <th scope="col">SubMarca</th>
+      <th scope="col">Descripcion</th>
+      <th></th>
+      <th></th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let auto of autos | slice: (page-1) * pageSize : (page-1) * pageSize + pageSize; index as i">
+      <th scope="row"> {{auto._id}}</th>
+      <td> {{ auto.marca }}</td>
+      <td>{{ auto.submarca }}</td>
+      <td>{{ auto.descripcion }}</td>
+      <td (click)="openModalEditar(auto)"><i class="fa fa-edit fa-2x"></i></td>
+      <td (click)="openModalConfirmarEliminar(auto)"> <i class="fa fa-trash fa-2x"></i></td>
+    </tr>
+  </tbody>
+</table>
+<ngb-pagination class="paginacion" [(page)]="page" [pageSize]="pageSize" [collectionSize]=100></ngb-pagination>
