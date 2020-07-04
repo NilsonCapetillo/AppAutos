@@ -1,0 +1,19 @@
+.table{
+    background-color: rgb(167, 180, 180);
+
+}
+.icono{
+    size: 15px;
+}
+.boton{
+    size: 20px;
+    padding: 0px;
+}
+.paginacion{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.boton-agregar{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 500;
+    size: 30px;
+}
